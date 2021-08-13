@@ -11,6 +11,7 @@ function createWindow(){
         }
     })
     win.loadFile('index.html')
+    //open inspect window for client-side debugging 
     win.webContents.openDevTools();
     //quit app when close button clicked 
     win.on('closed',()=> {
